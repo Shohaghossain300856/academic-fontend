@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Frontend Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center g-2">
+                <div class="col-8 col-md-9 d-flex align-items-center">
+                    <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png" alt="Logo" class="school-logo">
+                    <div class="school-name ms-2">
+                        <h2 class="mb-0">নূরে মদিনা মডেল মাদ্রাসা, রংপুর</h2>
+                        <p class="m-0 text-muted d-none d-md-block" style="font-size: 13px;">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ।</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 text-end">
+                    <a href="#" class="btn-apply-online pulse-animation">Apply Online</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+        <div class="container-fluid px-lg-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
+                            Academic
+                        </a>
+
+                        <ul class="dropdown-menu shadow border-0" aria-labelledby="academicDrop">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                    <span>Class Six</span> 
+                                    <i class="bi bi-chevron-right arrow-icon"></i>
+                                </a>
+                                <ul class="dropdown-menu shadow border-0">
+                                    <li><a class="dropdown-item" href="#">Group A</a></li>
+                                    <li><a class="dropdown-item" href="#">Group B</a></li>
+                                </ul>
+                            </li>   
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                    <span>Class Seven</span> 
+                                    <i class="bi bi-chevron-right arrow-icon"></i>
+                                </a>
+                                <ul class="dropdown-menu shadow border-0">
+                                    <li><a class="dropdown-item" href="#">Group A</a></li>
+                                    <li><a class="dropdown-item" href="#">Group B</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Class Eight</a></li>
+                            <li><a class="dropdown-item" href="#">Class Nine</a></li>
+                            <li><a class="dropdown-item" href="#">Class Ten</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Student Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notice-ticker">
+        <div class="container-fluid px-lg-5">
+            <div class="ticker-wrapper">
+                <div class="ticker-title">সর্বশেষ আপডেট</div>
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    <a href="">📢 ২০২৬ সালের বার্ষিক ক্রীড়া প্রতিযোগিতা আগামী ১০ই ফেব্রুয়ারি থেকে শুরু হবে...</a>
+                    <a href="">📢 নতুন ছাত্র-ছাত্রীদের ডিজিটাল আইডি কার্ড বিতরণ চলছে... </a>
+                    <a href="">📢 আগামী ২১শে ফেব্রুয়ারি আন্তর্জাতিক মাতৃভাষা দিবস উপলক্ষে স্কুল বন্ধ থাকবে...</a> 
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <section class="teacher-hero-section">
+        <div class="container-fluid px-lg-5">
+            <div class="row">
+                <div class="col-12">
+                    <div id="teacherPageSlider" class="carousel slide carousel-fade shadow-sm" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-indicators t-indicators">
+                            <button type="button" data-bs-target="#teacherPageSlider" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#teacherPageSlider" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#teacherPageSlider" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner rounded-15 overflow-hidden">
+                            <div class="carousel-item active">
+                                <div class="t-slider-overlay"></div>
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1351&q=80" class="d-block w-100 t-slider-img zoom-animation" alt="Campus">
+                                <div class="carousel-caption t-caption">
+                                    <h6 class="text-warning text-uppercase fw-bold mb-2 ls-2">আমাদের গর্ব</h6>
+                                    <h3 class="display-5 fw-bold text-white">দক্ষ শিক্ষক মন্ডলী</h3>
+                                    <p class="lead d-none d-md-block">অভিজ্ঞ শিক্ষকদের সঠিক নির্দেশনায় আমরা গড়ি আগামীর ভবিষ্যৎ।</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="t-slider-overlay"></div>
+                                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1350&q=80" class="d-block w-100 t-slider-img zoom-animation" alt="Teaching">
+                                <div class="carousel-caption t-caption">
+                                    <h6 class="text-warning text-uppercase fw-bold mb-2 ls-2">ডিজিটাল শিক্ষা</h6>
+                                    <h3 class="display-5 fw-bold text-white">আধুনিক শিক্ষাদান</h3>
+                                    <p class="lead d-none d-md-block">প্রযুক্তিনির্ভর পাঠদানের মাধ্যমে শিক্ষার্থীদের দক্ষ করে গড়ে তোলা হয়।</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awesome-gallery-section py-5">
+        <div class="container-fluid px-lg-5">
+            <div class="text-center mb-5 animate__animated animate__fadeInDown">
+                <h2 class="fw-bold display-5" style="color: var(--primary-blue);">ফটো গ্যালারি</h2>
+                <div class="mx-auto mt-2" style="width: 80px; height: 4px; background: var(--accent-gold); border-radius: 10px;"></div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="gallery-filter-btns animate__animated animate__fadeInUp">
+                        <button class="btn btn-filter active" data-filter="all">সব ছবি</button>
+                        <button class="btn btn-filter" data-filter="events">অনুষ্ঠান</button>
+                        <button class="btn btn-filter" data-filter="sports">খেলাধুলা</button>
+                        <button class="btn btn-filter" data-filter="campus">ক্যাম্পাস</button>
+                        <button class="btn btn-filter" data-filter="science-fair">বিজ্ঞান মেলা</button>
+                        <button class="btn btn-filter" data-filter="picnic">বার্ষিক পিকনিক</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 gallery-grid animate__animated animate__zoomIn animate__delay-1s">
+                <div class="col-md-6 col-lg-4 gallery-item events science-fair">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery-id="event-id-1">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Event">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">বিজ্ঞান মেলা ২০২১</h5>
+                                <p class="text-white-50 small">(৬টি ছবি)</p>
+                                <a href="#" class="view-btn"><i class="bi bi-images"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item campus">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল ক্যাম্পাস">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="Campus">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">স্কুল ক্যাম্পাস</h5>
+                                <p class="text-white-50 small">আমাদের প্রিয় প্রাঙ্গণ</p>
+                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item sports">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক ক্রীড়া প্রতিযোগিতা">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Sports">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">বার্ষিক ক্রীড়া প্রতিযোগিতা</h5>
+                                <p class="text-white-50 small">মাঠের উত্তেজনা</p>
+                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item picnic">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক পিকনিক">
+                        <img src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" alt="Picnic">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">বার্ষিক পিকনিক</h5>
+                                <p class="text-white-50 small">বন্ধুদের সাথে আনন্দ</p>
+                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item events">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" data-image-title="পুরস্কার বিতরণী">
+                        <img src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" alt="Award Ceremony">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">পুরস্কার বিতরণী</h5>
+                                <p class="text-white-50 small">কৃতিত্বের সম্মাননা</p>
+                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item campus">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল বিল্ডিং">
+                        <img src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" alt="School Building">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h5 class="text-white fw-bold">স্কুল বিল্ডিং</h5>
+                                <p class="text-white-50 small">আমাদের স্বপ্নের স্কুল</p>
+                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="container-fluid px-lg-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2913/2913045.png" alt="Logo" class="footer-logo mb-3">
+                        <h4 class="school-name-footer">আদর্শ উচ্চ বিদ্যালয়</h4>
+                        <p class="about-text">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ। আমরা শিক্ষার্থীদের মানসম্মত শিক্ষা ও নৈতিক চরিত্র গঠনে প্রতিশ্রুতিবদ্ধ।</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">অন্যান্য পোর্টাল</h5>
+                        <ul class="footer-links">
+                            <li><a href="http://www.moedu.gov.bd/" target="_blank"><i class="bi bi-chevron-right"></i> শিক্ষা মন্ত্রণালয়</a></li>
+                            <li><a href="http://www.dshe.gov.bd/" target="_blank"><i class="bi bi-chevron-right"></i> মাউশি পোর্টাল</a></li>
+                            <li><a href="http://www.educationboard.gov.bd/" target="_blank"><i class="bi bi-chevron-right"></i> শিক্ষা বোর্ড</a></li>
+                            <li><a href="https://www.teachers.gov.bd/" target="_blank"><i class="bi bi-chevron-right"></i> শিক্ষক বাতায়ন</a></li>
+                            <li><a href="https://bangladesh.gov.bd/" target="_blank"><i class="bi bi-chevron-right"></i> জাতীয় তথ্য বাতায়ন</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">জরুরি সহায়তা</h5>
+                        <div class="emergency-highlight-box">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="h-card">
+                                        <span class="h-num">৯৯৯</span>
+                                        <span class="h-label">জাতীয় জরুরি সেবা</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="h-card">
+                                        <span class="h-num">৩৩৩</span>
+                                        <span class="h-label">সরকারি সেবা</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="h-card">
+                                        <span class="h-num">১০৯</span>
+                                        <span class="h-label">নারী ও শিশু সহায়তা</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="h-card">
+                                        <span class="h-num">১৬২২২</span>
+                                        <span class="h-label">শিক্ষা হেল্পলাইন</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">যোগাযোগ করুন</h5>
+                        <ul class="contact-info">
+                            <li><i class="bi bi-geo-alt-fill text-gold"></i> কলেজ রোড, রংপুর সদর</li>
+                            <li><i class="bi bi-telephone-fill text-gold"></i> +৮৮০ ১৭০০-০০০০০০</li>
+                            <li><i class="bi bi-envelope-fill text-gold"></i> info@school.edu.bd</li>
+                            <li><i class="bi bi-clock-fill text-gold"></i> সকাল ৯টা - বিকাল ৪টা</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area">
+            <div class="container text-center">
+                <p class="m-0">স্বত্ব © ২০২৬ <span>আদর্শ উচ্চ বিদ্যালয়</span>। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

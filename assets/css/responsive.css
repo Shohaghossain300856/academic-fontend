@@ -1,0 +1,112 @@
+/* --- Mobile Responsive Fixes --- */
+
+@media (max-width: 991px) {
+
+  .premium-features h6, 
+  .premium-features h2 {
+    text-align: center !important;
+    display: block;
+    width: 100%;
+}
+
+.title-divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.navbar-collapse {
+    background: var(--primary-blue); 
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.dropdown-submenu .custom-nav-link.show .arrow-icon {
+    transform: rotate(90deg);
+}
+
+.dropdown-menu {
+    background-color: #002d5a !important; 
+    border: none !important;
+    padding-left: 15px;
+}
+
+.dropdown-item {
+    color: #ffffff !important; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 0;
+}
+
+.dropdown-submenu .dropdown-menu {
+    background-color: #001f3f !important; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 2px solid var(--accent-gold) !important;
+}
+
+/* ২. হেডার রেসপনসিভ */
+.school-logo {
+    width: 45px; /* মোবাইলে লোগো ছোট */
+}
+
+.school-name h2 {
+    font-size: 1rem; /* মোবাইলে নাম ছোট */
+    line-height: 1.2;
+}
+
+.btn-apply-online {
+    padding: 6px 15px; /* মোবাইলে বাটন ছোট */
+    font-size: 12px;
+}
+.teacher-img-wrapper {
+    height: 200px; /* ট্যাব স্ক্রিনে হাইট আরেকটু কমানো হয়েছে */
+}
+}
+
+
+/* মোবাইলের জন্য হাইট অ্যাডজাস্ট */
+@media (max-width: 768px) {
+    .t-slider-img {
+        height: 250px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .teachers-section {
+        padding: 40px 0; /* গ্যাপ একটু কমানো হয়েছে */
+    }
+    
+    .teacher-img-wrapper {
+        height: 250px; /* মোবাইলে কার্ড বড় থাকে তাই হাইট কিছুটা বাড়ানো হয়েছে ব্যালেন্সের জন্য */
+    }
+
+    .teacher-card {
+        max-width: 320px; /* মোবাইলে কার্ড যেন খুব বেশি চওড়া না হয় */
+        margin: 0 auto; /* কার্ডটি মাঝখানে রাখার জন্য */
+    }
+
+    .teacher-details h6 {
+        font-size: 18px; /* মোবাইলে নাম একটু বড় করে দেখা যাবে */
+    }
+
+    .section-title h2 {
+        font-size: 24px; /* টাইটেল মোবাইলে ছোট করা হয়েছে */
+    }
+    .custom-nav-link.show .arrow-icon,
+    .dropdown-submenu .custom-nav-link.show .arrow-icon {
+        transform: rotate(90deg);
+    }
+    
+    /* মোবাইলে Academic আইকন যেন একদম ডানে থাকে */
+    .nav-link.custom-nav-link {
+        width: 100%;
+    }
+    .school-name h2 {
+        font-size: 0.9rem;
+    }
+    .top-header {
+        padding: 8px 0;
+    }
+}
+
+
