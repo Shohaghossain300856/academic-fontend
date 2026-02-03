@@ -8,80 +8,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 <body>
-    <header class="top-header">
-        <div class="container-fluid px-lg-5">
-            <div class="row align-items-center g-2">
-                <div class="col-8 col-md-9 d-flex align-items-center">
-                    <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png" alt="Logo" class="school-logo">
-                    <div class="school-name ms-2">
-                        <h2 class="mb-0">নূরে মদিনা মডেল মাদ্রাসা, রংপুর</h2>
-                        <p class="m-0 text-muted d-none d-md-block" style="font-size: 13px;">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ।</p>
-                    </div>
-                </div>
-                <div class="col-4 col-md-3 text-end">
-                    <a href="#" class="btn-apply-online pulse-animation">Apply Online</a>
+
+  <header class="top-header">
+    <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-2">
+            <div class="col-8 col-md-9 d-flex align-items-center">
+                <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png" alt="Logo" class="school-logo">
+                <div class="school-name ms-2">
+                    <h2 class="mb-0">নূরে মদিনা মডেল মাদ্রাসা, রংপুর</h2>
+                    <p class="m-0 text-muted d-none d-md-block" style="font-size: 13px;">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ।</p>
                 </div>
             </div>
+            <div class="col-4 col-md-3 text-end">
+           <a href="#" class="btn-apply-online pulse-animation d-inline-flex align-items-center">
+        <span class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-2">
+        </span>
+       Apply Online
+       </a>
+         </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
-        <div class="container-fluid px-lg-5">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container-fluid px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="teacher.html">Teachers</a></li>
 
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
-                            Academic
-                        </a>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
+                        Academic
+                    </a>
 
-                        <ul class="dropdown-menu shadow border-0" aria-labelledby="academicDrop">
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
-                                    <span>Class Six</span> 
-                                    <i class="bi bi-chevron-right arrow-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item" href="#">Group A</a></li>
-                                    <li><a class="dropdown-item" href="#">Group B</a></li>
-                                </ul>
-                            </li>   
+                    <ul class="dropdown-menu shadow border-0" aria-labelledby="academicDrop">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                <span>Class Six</span> 
+                                <i class="bi bi-chevron-right arrow-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="group.html">Group A</a></li>
+                                <li><a class="dropdown-item" href="#">Group B</a></li>
+                            </ul>
+                        </li>   
 
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
-                                    <span>Class Seven</span> 
-                                    <i class="bi bi-chevron-right arrow-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item" href="#">Group A</a></li>
-                                    <li><a class="dropdown-item" href="#">Group B</a></li>
-                                </ul>
-                            </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                <span>Class Seven</span> 
+                                <i class="bi bi-chevron-right arrow-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="#">Group A</a></li>
+                                <li><a class="dropdown-item" href="#">Group B</a></li>
+                            </ul>
+                        </li>
 
-                            <li><a class="dropdown-item" href="#">Class Eight</a></li>
-                            <li><a class="dropdown-item" href="#">Class Nine</a></li>
-                            <li><a class="dropdown-item" href="#">Class Ten</a></li>
-                        </ul>
-                    </li>
+                        <li><a class="dropdown-item" href="#">Class Eight</a></li>
+                        <li><a class="dropdown-item" href="#">Class Nine</a></li>
+                        <li><a class="dropdown-item" href="#">Class Ten</a></li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Result</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Student Info</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-            </div>
+                <li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
+                <li class="nav-item"><a class="nav-link" href="student-info.html">Student Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="home-work.html">Home Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div class="notice-ticker">
         <div class="container-fluid px-lg-5">
@@ -134,132 +141,112 @@
         </div>
     </section>
 
-    <section class="awesome-gallery-section py-5">
-        <div class="container-fluid px-lg-5">
-            <div class="text-center mb-5 animate__animated animate__fadeInDown">
-                <h2 class="fw-bold display-5" style="color: var(--primary-blue);">ফটো গ্যালারি</h2>
-                <div class="mx-auto mt-2" style="width: 80px; height: 4px; background: var(--accent-gold); border-radius: 10px;"></div>
-            </div>
 
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <div class="gallery-filter-btns animate__animated animate__fadeInUp">
-                        <button class="btn btn-filter active" data-filter="all">সব ছবি</button>
-                        <button class="btn btn-filter" data-filter="events">অনুষ্ঠান</button>
-                        <button class="btn btn-filter" data-filter="sports">খেলাধুলা</button>
-                        <button class="btn btn-filter" data-filter="campus">ক্যাম্পাস</button>
-                        <button class="btn btn-filter" data-filter="science-fair">বিজ্ঞান মেলা</button>
-                        <button class="btn btn-filter" data-filter="picnic">বার্ষিক পিকনিক</button>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row g-4 gallery-grid animate__animated animate__zoomIn animate__delay-1s">
-                <div class="col-md-6 col-lg-4 gallery-item events science-fair">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery-id="event-id-1">
-                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Event">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">বিজ্ঞান মেলা ২০২১</h5>
-                                <p class="text-white-50 small">(৬টি ছবি)</p>
-                                <a href="#" class="view-btn"><i class="bi bi-images"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="awesome-gallery-section py-5">
+    <div class="container-fluid px-lg-5">
+        <div class="text-center mb-5" data-aos="fade-down">
+            <h2 class="fw-bold display-5" style="color: var(--primary-blue);">ফটো গ্যালারি</h2>
+            <div class="mx-auto mt-2" style="width: 80px; height: 4px; background: var(--accent-gold); border-radius: 10px;"></div>
+        </div>
 
-                <div class="col-md-6 col-lg-4 gallery-item campus">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল ক্যাম্পাস">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="Campus">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">স্কুল ক্যাম্পাস</h5>
-                                <p class="text-white-50 small">আমাদের প্রিয় প্রাঙ্গণ</p>
-                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 gallery-item sports">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক ক্রীড়া প্রতিযোগিতা">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Sports">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">বার্ষিক ক্রীড়া প্রতিযোগিতা</h5>
-                                <p class="text-white-50 small">মাঠের উত্তেজনা</p>
-                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 gallery-item picnic">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক পিকনিক">
-                        <img src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" alt="Picnic">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">বার্ষিক পিকনিক</h5>
-                                <p class="text-white-50 small">বন্ধুদের সাথে আনন্দ</p>
-                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 gallery-item events">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" data-image-title="পুরস্কার বিতরণী">
-                        <img src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" alt="Award Ceremony">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">পুরস্কার বিতরণী</h5>
-                                <p class="text-white-50 small">কৃতিত্বের সম্মাননা</p>
-                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 gallery-item campus">
-                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল বিল্ডিং">
-                        <img src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" alt="School Building">
-                        <div class="gallery-overlay">
-                            <div class="overlay-content">
-                                <h5 class="text-white fw-bold">স্কুল বিল্ডিং</h5>
-                                <p class="text-white-50 small">আমাদের স্বপ্নের স্কুল</p>
-                                <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <div class="gallery-filter-btns" data-aos="fade-up">
+                    <button class="btn btn-filter active" data-filter="all">সব ছবি</button>
+                    <button class="btn btn-filter" data-filter="events">অনুষ্ঠান</button>
+                    <button class="btn btn-filter" data-filter="sports">খেলাধুলা</button>
+                    <button class="btn btn-filter" data-filter="campus">ক্যাম্পাস</button>
+                    <button class="btn btn-filter" data-filter="science-fair">বিজ্ঞান মেলা</button>
+                    <button class="btn btn-filter" data-filter="picnic">বার্ষিক পিকনিক</button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="galleryModalLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+        <div class="row g-4 gallery-grid">
+            
+            <div class="col-md-6 col-lg-4 gallery-item events science-fair" data-aos="zoom-in" data-aos-delay="100">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery-id="event-id-1">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Event">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">বিজ্ঞান মেলা ২০২১</h5>
+                            <p class="text-white-50 small">(৬টি ছবি)</p>
+                            <a href="#" class="view-btn"><i class="bi bi-images"></i></a>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item campus" data-aos="zoom-in" data-aos-delay="200">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল ক্যাম্পাস">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="Campus">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">স্কুল ক্যাম্পাস</h5>
+                            <p class="text-white-50 small">আমাদের প্রিয় প্রাঙ্গণ</p>
+                            <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item sports" data-aos="zoom-in" data-aos-delay="300">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক ক্রীড়া প্রতিযোগিতা">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Sports">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">বার্ষিক ক্রীড়া প্রতিযোগিতা</h5>
+                            <p class="text-white-50 small">মাঠের উত্তেজনা</p>
+                            <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item picnic" data-aos="zoom-in" data-aos-delay="100">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" data-image-title="বার্ষিক পিকনিক">
+                    <img src="https://images.unsplash.com/photo-1506755855567-c257b420f666?auto=format&fit=crop&w=800&q=80" alt="Picnic">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">বার্ষিক পিকনিক</h5>
+                            <p class="text-white-50 small">বন্ধুদের সাথে আনন্দ</p>
+                            <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item events" data-aos="zoom-in" data-aos-delay="200">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" data-image-title="পুরস্কার বিতরণী">
+                    <img src="https://images.unsplash.com/photo-1520004439167-9c609511675a?auto=format&fit=crop&w=800&q=80" alt="Award Ceremony">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">পুরস্কার বিতরণী</h5>
+                            <p class="text-white-50 small">কৃতিত্বের সম্মাননা</p>
+                            <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item campus" data-aos="zoom-in" data-aos-delay="300">
+                <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image-src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" data-image-title="স্কুল বিল্ডিং">
+                    <img src="https://images.unsplash.com/photo-1582213797960-b6f707f1d46b?auto=format&fit=crop&w=800&q=80" alt="School Building">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5 class="text-white fw-bold">স্কুল বিল্ডিং</h5>
+                            <p class="text-white-50 small">আমাদের স্বপ্নের স্কুল</p>
+                            <a href="#" class="view-btn"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+</section>
+
 
 
     <footer class="main-footer">
@@ -347,7 +334,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 
+<script>
+      AOS.init({
+        duration: 1000, 
+        once: false, 
+        mirror: true,   
+    });
+</script>
 </body>
 </html>

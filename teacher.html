@@ -8,81 +8,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 <body>
 
-    <header class="top-header">
-        <div class="container-fluid px-lg-5">
-            <div class="row align-items-center g-2">
-                <div class="col-8 col-md-9 d-flex align-items-center">
-                    <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png" alt="Logo" class="school-logo">
-                    <div class="school-name ms-2">
-                        <h2 class="mb-0">নূরে মদিনা মডেল মাদ্রাসা, রংপুর</h2>
-                        <p class="m-0 text-muted d-none d-md-block" style="font-size: 13px;">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ।</p>
-                    </div>
-                </div>
-                <div class="col-4 col-md-3 text-end">
-                    <a href="#" class="btn-apply-online pulse-animation">Apply Online</a>
+
+  <header class="top-header">
+    <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-2">
+            <div class="col-8 col-md-9 d-flex align-items-center">
+                <img src="https://png.pngtree.com/png-vector/20211011/ourmid/pngtree-school-logo-png-image_3977360.png" alt="Logo" class="school-logo">
+                <div class="school-name ms-2">
+                    <h2 class="mb-0">নূরে মদিনা মডেল মাদ্রাসা, রংপুর</h2>
+                    <p class="m-0 text-muted d-none d-md-block" style="font-size: 13px;">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ।</p>
                 </div>
             </div>
+            <div class="col-4 col-md-3 text-end">
+           <a href="#" class="btn-apply-online pulse-animation d-inline-flex align-items-center">
+        <span class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-2">
+        </span>
+       Apply Online
+       </a>
+         </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
-        <div class="container-fluid px-lg-5">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container-fluid px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="teacher.html">Teachers</a></li>
 
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
-                            Academic
-                        </a>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
+                        Academic
+                    </a>
 
-                        <ul class="dropdown-menu shadow border-0" aria-labelledby="academicDrop">
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
-                                    <span>Class Six</span> 
-                                    <i class="bi bi-chevron-right arrow-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item" href="#">Group A</a></li>
-                                    <li><a class="dropdown-item" href="#">Group B</a></li>
-                                </ul>
-                            </li>   
+                    <ul class="dropdown-menu shadow border-0" aria-labelledby="academicDrop">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                <span>Class Six</span> 
+                                <i class="bi bi-chevron-right arrow-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="group.html">Group A</a></li>
+                                <li><a class="dropdown-item" href="#">Group B</a></li>
+                            </ul>
+                        </li>   
 
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
-                                    <span>Class Seven</span> 
-                                    <i class="bi bi-chevron-right arrow-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item" href="#">Group A</a></li>
-                                    <li><a class="dropdown-item" href="#">Group B</a></li>
-                                </ul>
-                            </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#">
+                                <span>Class Seven</span> 
+                                <i class="bi bi-chevron-right arrow-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow border-0">
+                                <li><a class="dropdown-item" href="#">Group A</a></li>
+                                <li><a class="dropdown-item" href="#">Group B</a></li>
+                            </ul>
+                        </li>
 
-                            <li><a class="dropdown-item" href="#">Class Eight</a></li>
-                            <li><a class="dropdown-item" href="#">Class Nine</a></li>
-                            <li><a class="dropdown-item" href="#">Class Ten</a></li>
-                        </ul>
-                    </li>
+                        <li><a class="dropdown-item" href="#">Class Eight</a></li>
+                        <li><a class="dropdown-item" href="#">Class Nine</a></li>
+                        <li><a class="dropdown-item" href="#">Class Ten</a></li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Result</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Student Info</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-            </div>
+                <li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
+                <li class="nav-item"><a class="nav-link" href="student-info.html">Student Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="home-work.html">Home Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div class="notice-ticker">
         <div class="container-fluid px-lg-5">
@@ -137,13 +144,13 @@
 
 <section class="teachers-section py-5 bg-light">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-down">
             <h2 class="fw-bold" style="color: var(--primary-blue);">আমাদের দক্ষ শিক্ষকবৃন্দ</h2>
             <div class="mx-auto" style="width: 70px; height: 3px; background: var(--accent-gold); border-radius: 10px;"></div>
         </div>
 
         <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?auto=format&fit=crop&w=800&q=60" alt="Principal">
@@ -156,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=60" alt="Asst. Principal">
@@ -169,33 +176,33 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=60" alt="Math Teacher">
                     </div>
                     <div class="teacher-details text-center p-3">
                         <h6 class="fw-bold mb-1" style="color: var(--primary-blue);">জহিরুল ইসলাম</h6>
-                        <p class="text-muted small mb-0 fw-semibold">সিনিয়র শিক্ষক (গণিত)</p>
+                        <p class="text-muted small mb-0 fw-semibold">সিনিয়র শিক্ষক (গণিত)</p>
                         <span class="badge mt-2" style="background: var(--accent-gold); color: #000;">বি.এসসি, এম.এসসি</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=60" alt="English Teacher">
                     </div>
                     <div class="teacher-details text-center p-3">
                         <h6 class="fw-bold mb-1" style="color: var(--primary-blue);">নাজনীন সুলতানা</h6>
-                        <p class="text-muted small mb-0 fw-semibold">সিনিয়র শিক্ষক (ইংরেজি)</p>
+                        <p class="text-muted small mb-0 fw-semibold">সিনিয়র শিক্ষক (ইংরেজি)</p>
                         <span class="badge mt-2" style="background: var(--accent-gold); color: #000;">এম.এ (ইংরেজি)</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=60" alt="ICT Teacher">
@@ -208,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=60" alt="Bangla Teacher">
@@ -221,7 +228,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=60" alt="Science Teacher">
@@ -229,12 +236,12 @@
                     <div class="teacher-details text-center p-3">
                         <h6 class="fw-bold mb-1" style="color: var(--primary-blue);">মোঃ কামরুল হাসান</h6>
                         <p class="text-muted small mb-0 fw-semibold">সহকারী শিক্ষক (বিজ্ঞান)</p>
-                        <span class="badge mt-2" style="background: var(--accent-gold); color: #000;">এম.এসসি (রসায়ন)</span>
+                        <span class="badge mt-2" style="background: var(--accent-gold); color: #000;">এম.এসসি (রসায়ন)</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="teacher-card shadow-sm border-0 h-100">
                     <div class="teacher-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=60" alt="Social Science">
@@ -334,8 +341,17 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+<script>
+      AOS.init({
+        duration: 1000, 
+        once: false, 
+        mirror: true,   
+    });
+</script>
 
 </body>
 </html>

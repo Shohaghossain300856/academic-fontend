@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
@@ -24,8 +25,12 @@
                 </div>
             </div>
             <div class="col-4 col-md-3 text-end">
-                <a href="#" class="btn-apply-online pulse-animation">Apply Online</a>
-            </div>
+           <a href="#" class="btn-apply-online pulse-animation d-inline-flex align-items-center">
+        <span class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-2">
+        </span>
+       Apply Online
+       </a>
+         </div>
         </div>
     </div>
 </header>
@@ -37,8 +42,8 @@
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="teacher.html">Teachers</a></li>
 
                 <li class="nav-item dropdown dropdown-hover">
                     <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center custom-nav-link" href="#" id="academicDrop" data-bs-toggle="dropdown">
@@ -52,7 +57,7 @@
                                 <i class="bi bi-chevron-right arrow-icon"></i>
                             </a>
                             <ul class="dropdown-menu shadow border-0">
-                                <li><a class="dropdown-item" href="#">Group A</a></li>
+                                <li><a class="dropdown-item" href="group.html">Group A</a></li>
                                 <li><a class="dropdown-item" href="#">Group B</a></li>
                             </ul>
                         </li>   
@@ -74,11 +79,12 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Result</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Student Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
+                <li class="nav-item"><a class="nav-link" href="student-info.html">Student Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-work.html">Home Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -100,20 +106,19 @@
 
 
 
-
-<section class="premium-homework py-5" style="background: linear-gradient(to bottom, #fcfcfc, #f3f7fa);">
+<section class="premium-homework py-5 animate__animated animate__fadeIn" style="background: linear-gradient(to bottom, #fcfcfc, #f3f7fa);">
     <div class="container-fluid px-lg-5">
         
-        <div class="row justify-content-center text-center mb-5">
+        <div class="row justify-content-center text-center mb-5 animate__animated animate__fadeInDown">
             <div class="col-lg-7">
                 <span class="badge px-3 py-2 mb-3 shadow-sm" style="background: rgba(255, 204, 0, 0.1); color: #003366; border: 1px solid rgb(255, 204, 0); border-radius: 50px; font-weight: 700; font-size: 12px; letter-spacing: 2px;">DAILY ACADEMIC UPDATES</span>
-                <h2 class="display-5 fw-bold mb-3" style="color: #003366;">বাড়ির কাজ (Home Work )</h2>
-                <p class="text-muted">আপনার সন্তানের নিয়মিত পাঠদান ও হোমওয়ার্কের আপডেট এখান থেকে সংগ্রহ করুন।</p>
+                <h2 class="display-5 fw-bold mb-3" style="color: #003366;">বাড়ির কাজ (Home Work )</h2>
+                <p class="text-muted">আপনার সন্তানের নিয়মিত পাঠদান ও হোমওয়ার্কের আপডেট এখান থেকে সংগ্রহ করুন।</p>
                 <div class="title-line mx-auto"></div>
             </div>
         </div>
 
-        <div class="filter-wrapper p-3 mb-5 shadow-lg">
+        <div class="filter-wrapper p-3 mb-5 shadow-lg animate__animated animate__zoomIn">
             <div class="row g-3 align-items-center">
                 <div class="col-md-3">
                     <div class="input-group">
@@ -155,7 +160,7 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
                 <div class="homework-card">
                     <div class="card-top-accent"></div>
                     <div class="p-4">
@@ -164,7 +169,7 @@
                             <span class="date-tag">২১ জানু, ২০২৬</span>
                         </div>
                         <h5 class="fw-bold mb-2" style="color: #003366;">বাংলা সাহিত্য</h5>
-                        <p class="text-muted leading-relaxed">"বিদ্রোহী" কবিতার মূলভাব ভালো করে পড়বে এবং প্রথম ১০ লাইন না দেখে খাতায় লিখবে।</p>
+                        <p class="text-muted leading-relaxed">"বিদ্রোহী" কবিতার মূলভাব ভালো করে পড়বে এবং প্রথম ১০ লাইন না দেখে খাতায় লিখবে।</p>
                         <div class="status-indicator">
                             <i class="bi bi-check2-circle me-1"></i> গুরুত্ব: উচ্চ (High)
                         </div>
@@ -172,7 +177,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
                 <div class="homework-card active-card">
                     <div class="card-top-accent-gold"></div>
                     <div class="p-4">
@@ -189,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
                 <div class="homework-card">
                     <div class="card-top-accent"></div>
                     <div class="p-4">
@@ -298,8 +303,18 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+<script>
+      AOS.init({
+        duration: 1000, 
+        once: false, 
+        mirror: true,   
+    });
+</script>
 
 </body>
 </html>

@@ -49,6 +49,30 @@ body {
 .custom-nav-link::after {
     display: none !important;
 }
+
+
+.main-nav .nav-link.active {
+    color: #ffcc00 !important; 
+    background: rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* একটিভ অবস্থায় নিচে একটি দাগ */
+.main-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+}
+
+
+
+
 .message-card {
     border: none;
     border-radius: 15px;
@@ -254,7 +278,7 @@ body {
 .contact-info li { display: flex; gap: 10px; margin-bottom: 15px; font-size: 15px; }
 .text-gold { color: #ffcc00; }
 
-.social-links { display: flex; gap: 10px; margin-top: 20px; }
+.social-links {gap: 10px; margin-top: 20px; }
 .social-links a {
     width: 35px; height: 35px;
     background: rgba(255, 255, 255, 0.1);
@@ -1017,103 +1041,6 @@ body.modal-open {
 
 
 
-  /*student group css start*/
-.student-list-section {
-        font-family: 'Hind Siliguri', sans-serif;
-        background: #fdfdfd;
-        padding: 60px 0;
-    }
-
-    .student-list-section .container-fluid {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
-
-    /* টাইটেল স্টাইল */
-    .title-divider {
-        width: 70px;
-        height: 4px;
-        background: rgb(255, 204, 0);
-        border-radius: 10px;
-        margin: 15px auto;
-    }
-
-    /* টেবিল ডিজাইন */
-    .custom-student-table thead {
-        background: #003366;
-        color: #fff;
-    }
-
-    .student-img-thumb {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid rgb(255, 204, 0);
-        background: #f0f0f0;
-    }
-
-    /* ইউনিফাইড গ্রুপ ব্যাজ - একদম স্পষ্ট কালার */
-    .unified-badge {
-        background: #003366 !important; /* নেভি ব্লু ব্যাকগ্রাউন্ড */
-        color: rgb(255, 204, 0) !important; /* গোল্ডেন টেক্সট */
-        border: 1px solid rgb(255, 204, 0);
-        font-weight: 700 !important;
-        padding: 8px 16px !important;
-        letter-spacing: 1px;
-        font-size: 13px;
-    }
-
-    /* প্রোফাইল বাটন */
-    .btn-profile-gold {
-        background: rgb(255, 204, 0) !important;
-        color: #000 !important;
-        font-weight: 700;
-        border: none;
-        border-radius: 8px;
-        transition: 0.3s;
-    }
-
-    .btn-profile-gold:hover {
-        background: #003366 !important;
-        color: #fff !important;
-        transform: translateY(-2px);
-    }
-
-    /* প্যাজিনেশন */
-    .custom-pagination .page-link {
-        border: 1px solid #eee;
-        color: #003366;
-        border-radius: 10px !important;
-        margin: 0 3px;
-        font-weight: 600;
-    }
-
-    .custom-pagination .page-item.active .page-link {
-        background: #003366 !important;
-        color: rgb(255, 204, 0) !important;
-    }
-
-    /* মোবাইল ফিক্স */
-    @media (max-width: 767px) {
-        .custom-student-table thead { display: none; }
-        .custom-student-table tr {
-            display: block;
-            margin-bottom: 25px;
-            border: 1px solid #eee;
-            border-radius: 20px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            text-align: center;
-        }
-        .custom-student-table td { display: block; border: none; padding: 8px 0; }
-        .custom-student-table td:first-child::before { content: "রোল: "; font-weight: 900; color: #003366; }
-        .student-img-thumb { width: 80px; height: 80px; margin-bottom: 10px; }
-    }
-
-
-
     /*keno amader serthotto start*/
     .rounded-custom {
         border-radius: 50px 5px 50px 5px; /* ইউনিক বর্ডার রেডিয়াস */
@@ -1185,6 +1112,10 @@ body.modal-open {
     @media (max-width: 991px) {
         .experience-badge { display: none; }
     }
+
+
+
+
 
 /*slim-stats section start*/
 
@@ -1296,4 +1227,85 @@ body.modal-open {
 
     @media (max-width: 768px) {
         .filter-wrapper { padding: 10px; }
+    }
+
+
+  /*group css start*/
+ /* জেনারেল স্টাইল */
+    .rounded-4 { border-radius: 1.25rem !important; }
+    .bg-light { background-color: #f8fbff !important; }
+    
+    /* ট্যাব বাটন স্টাইল */
+    .custom-tabs .nav-link {
+        color: #555;
+        font-weight: 600;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid transparent;
+    }
+    .custom-tabs .nav-link:hover {
+        color: #003366;
+        background: rgba(0, 51, 102, 0.05);
+    }
+
+    .custom-tabs .nav-link.active {
+        border: 2px solid #ffcc00;
+        background-color: #003366 !important;
+        color: #ffcc00 !important;
+        box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+    }
+
+    /* টেবিল স্টাইল */
+    .table thead th {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .table tbody tr {
+        transition: background 0.3s;
+    }
+
+    /* শিক্ষক ও হোমওয়ার্ক কার্ড অ্যানিমেশন */
+    .hover-lift {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+
+    .teacher-card img {
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    /* আইকন বক্স */
+    .icon-shape {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+
+
+      .rounded-4 { border-radius: 1.25rem !important; }
+    .custom-tabs .nav-link {
+        color: #003366;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .custom-tabs .nav-link.active {
+        background-color: #003366 !important;
+        color: #ffcc00 !important;
+        box-shadow: 0 8px 20px rgba(0, 51, 102, 0.1);
+    }
+    .table-bordered td, .table-bordered th {
+        border-color: #eee !important;
+    }
+    .tab-pane {
+        animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
