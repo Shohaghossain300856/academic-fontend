@@ -54,17 +54,21 @@
 }
 
 .btn-apply-online {
-    padding: 6px 15px; /* মোবাইলে বাটন ছোট */
+    padding: 6px 15px; 
     font-size: 12px;
 }
 .teacher-img-wrapper {
-    height: 200px; /* ট্যাব স্ক্রিনে হাইট আরেকটু কমানো হয়েছে */
+    height: 200px; 
 }
 }
 
-
-/* মোবাইলের জন্য হাইট অ্যাডজাস্ট */
 @media (max-width: 768px) {
+    .ticker-title {
+        display: none;
+    }
+    .res-vorty {
+        font-size: 8px !important;
+    }
     .t-slider-img {
         height: 250px;
     }
@@ -72,8 +76,11 @@
 }
 
 @media (max-width: 576px) {
+       .ticker-title {
+        display: none;
+    }
     .teachers-section {
-        padding: 40px 0; /* গ্যাপ একটু কমানো হয়েছে */
+        padding: 40px 0; 
     }
     
     .teacher-img-wrapper {

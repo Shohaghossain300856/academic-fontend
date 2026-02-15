@@ -18,9 +18,14 @@ body {
 
 .btn-apply-online {
     background-color: var(--accent-gold);
-    color: #000; font-weight: bold; padding: 10px 25px;
-    border-radius: 50px; text-decoration: none; display: inline-block;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
     transition: 0.3s ease;
+    font-size: 20px;
 }
 .pulse-animation { animation: pulse 2s infinite; }
 @keyframes pulse {
@@ -278,7 +283,7 @@ body {
 .contact-info li { display: flex; gap: 10px; margin-bottom: 15px; font-size: 15px; }
 .text-gold { color: #ffcc00; }
 
-.social-links {gap: 10px; margin-top: 20px; }
+.social-links {gap: 10px; margin-top: 20px; display:flex;}
 .social-links a {
     width: 35px; height: 35px;
     background: rgba(255, 255, 255, 0.1);
@@ -461,7 +466,7 @@ body {
    AWESOME RESULT SECTION - FULL CSS
    ============================================================ */
 
-.awesome-result-section {
+   .awesome-result-section {
     background: #f8fafc; /* হালকা ব্যাকগ্রাউন্ড */
     padding-top: 60px;
     padding-bottom: 80px;
@@ -703,7 +708,7 @@ body {
    GALLERY SECTION - PERFECT FIX
    ============================================================ */
 
-.awesome-gallery-section {
+   .awesome-gallery-section {
     background: #ffffff;
     padding-top: 60px;
     padding-bottom: 80px;
@@ -830,288 +835,288 @@ body.modal-open {
 
 
 .about-us-complete {
-        font-family: 'Hind Siliguri', sans-serif;
-        background: #ffffff;
-        padding: 80px 0;
-        overflow: hidden;
-    }
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #ffffff;
+    padding: 80px 0;
+    overflow: hidden;
+}
 
-    .about-us-complete .container-fluid {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
+.about-us-complete .container-fluid {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
 
-    /* ইমেজ স্ট্যাকিং */
-    .about-img-stack {
-        height: 480px;
-        position: relative;
-    }
+/* ইমেজ স্ট্যাকিং */
+.about-img-stack {
+    height: 480px;
+    position: relative;
+}
 
-    .stack-item {
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    }
+.stack-item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
 
-    .item-1 {
-        width: 85%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
+.item-1 {
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-    .item-1 img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-    }
+.item-1 img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
 
-    .item-2 {
-        width: 55%;
-        position: absolute;
-        bottom: 20px;
-        right: 0;
-        z-index: 2;
-        border: 10px solid #ffffff;
-    }
+.item-2 {
+    width: 55%;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    z-index: 2;
+    border: 10px solid #ffffff;
+}
 
-    .item-2 img {
-        height: 280px;
-        width: 100%;
-        object-fit: cover;
-    }
+.item-2 img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
 
-    /* এক্সপেরিয়েন্স ব্যাজ */
-    .exp-badge-new {
-        position: absolute;
-        top: 30px;
-        right: 12%;
-        background: rgb(255, 204, 0); /* আপনার দেওয়া গোল্ডেন কালার */
-        color: #000;
-        padding: 25px 20px;
-        border-radius: 15px;
-        text-align: center;
-        z-index: 3;
-        box-shadow: 0 10px 25px rgba(255, 204, 0, 0.4);
-    }
+/* এক্সপেরিয়েন্স ব্যাজ */
+.exp-badge-new {
+    position: absolute;
+    top: 30px;
+    right: 12%;
+    background: rgb(255, 204, 0); /* আপনার দেওয়া গোল্ডেন কালার */
+    color: #000;
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 3;
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.4);
+}
 
-    .exp-badge-new h2 {
-        font-weight: 800;
-        line-height: 1;
-        font-size: 2.5rem;
-    }
+.exp-badge-new h2 {
+    font-weight: 800;
+    line-height: 1;
+    font-size: 2.5rem;
+}
 
-    /* গোল্ডেন ফিচার বক্স */
-    .feature-box-gold {
-        background: rgb(255, 204, 0) !important; /* গোল্ডেন ব্যাকগ্রাউন্ড */
-        padding: 15px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        transition: 0.3s;
-        border: 1px solid rgba(0,0,0,0.05);
-    }
-    
-    .feature-box-gold:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
-    }
+/* গোল্ডেন ফিচার বক্স */
+.feature-box-gold {
+    background: rgb(255, 204, 0) !important; /* গোল্ডেন ব্যাকগ্রাউন্ড */
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border: 1px solid rgba(0,0,0,0.05);
+}
 
-    /* কার্ড স্টাইলিং */
-    .about-fancy-card {
-        background: #ffffff;
-        border: 1px solid #eee;
-        border-radius: 20px;
-        transition: 0.4s;
-    }
+.feature-box-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+}
 
-    .highlighted-card {
-        background: #003366 !important;
-        color: #ffffff !important;
-        transform: translateY(-10px);
-        border: none;
-        box-shadow: 0 15px 30px rgba(0, 51, 102, 0.2);
-    }
+/* কার্ড স্টাইলিং */
+.about-fancy-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    transition: 0.4s;
+}
 
-    .fancy-icon {
-        font-size: 3.5rem;
-        color: #003366;
-    }
+.highlighted-card {
+    background: #003366 !important;
+    color: #ffffff !important;
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0 15px 30px rgba(0, 51, 102, 0.2);
+}
 
-    .highlighted-card .fancy-icon {
-        color: rgb(255, 204, 0) !important;
-    }
+.fancy-icon {
+    font-size: 3.5rem;
+    color: #003366;
+}
 
-    /* কাউন্টার সেকশন */
-    .counter-wrap { 
-        margin-top: 60px; 
-        background-color: #003366 !important; 
-    }
+.highlighted-card .fancy-icon {
+    color: rgb(255, 204, 0) !important;
+}
 
-    .border-end-white {
-        border-right: 1px solid rgba(255,255,255,0.1);
-    }
+/* কাউন্টার সেকশন */
+.counter-wrap { 
+    margin-top: 60px; 
+    background-color: #003366 !important; 
+}
 
-    @media (max-width: 991px) {
-        .about-img-stack { height: 380px; margin-bottom: 40px; }
-        .item-2 { display: none !important; }
-        .item-1 { width: 100%; }
-        .border-end-white { border: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    }
+.border-end-white {
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
 
-
-    .contact-section {
-        font-family: 'Hind Siliguri', sans-serif;
-        background: #fdfdfd;
-    }
-
-    .contact-section .container-fluid {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
-
-    .rounded-20 { border-radius: 20px; }
-
-    /* বাম পাশের কার্ড */
-    .icon-box {
-        width: 45px;
-        height: 45px;
-        background: rgba(255, 204, 0, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        color: rgb(255, 204, 0);
-        font-size: 1.2rem;
-    }
-
-    .gold-text { color: rgb(255, 204, 0); }
-
-    .social-btn {
-        width: 40px;
-        height: 40px;
-        background: rgba(255,255,255,0.1);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        border-radius: 50%;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .social-btn:hover {
-        background: rgb(255, 204, 0);
-        color: #003366;
-        transform: translateY(-3px);
-    }
-
-    /* ফর্ম ডিজাইন */
-    .custom-input {
-        border: 1px solid #e0e0e0;
-        padding: 12px 15px;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-
-    .custom-input:focus {
-        border-color: #003366;
-        box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.1);
-    }
-
-    .btn-send {
-        background: rgb(255, 204, 0);
-        color: #000;
-        border: none;
-        border-radius: 10px;
-        transition: 0.3s;
-        width: 100%;
-    }
-
-    .btn-send:hover {
-        background: #003366;
-        color: white;
-        box-shadow: 0 10px 20px rgba(0, 51, 102, 0.15);
-    }
-
-    @media (max-width: 991px) {
-        .contact-info-card { margin-bottom: 20px; }
-    }
+@media (max-width: 991px) {
+    .about-img-stack { height: 380px; margin-bottom: 40px; }
+    .item-2 { display: none !important; }
+    .item-1 { width: 100%; }
+    .border-end-white { border: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+}
 
 
+.contact-section {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #fdfdfd;
+}
 
-    /*keno amader serthotto start*/
-    .rounded-custom {
-        border-radius: 50px 5px 50px 5px; /* ইউনিক বর্ডার রেডিয়াস */
-        border: 10px solid #fff;
-    }
+.contact-section .container-fluid {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
 
-    .feature-img-wrapper {
-        padding: 20px;
-    }
+.rounded-20 { border-radius: 20px; }
 
-    /* অভিজ্ঞতার ব্যাজ */
-    .experience-badge {
-        position: absolute;
-        bottom: 10%;
-        right: -5%;
-        background: rgb(255, 204, 0);
-        color: #003366;
-        padding: 20px 30px;
-        border-radius: 20px;
-        text-align: center;
-        animation: float 3s ease-in-out infinite;
-    }
+/* বাম পাশের কার্ড */
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 204, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(255, 204, 0);
+    font-size: 1.2rem;
+}
 
-    /* মডার্ন কার্ড ডিজাইন */
-    .modern-card {
-        display: flex;
-        gap: 20px;
-        padding: 25px;
-        background: #fff;
-        border-radius: 20px;
-        transition: 0.3s;
-        border: 1px solid rgba(0, 51, 102, 0.05);
-    }
+.gold-text { color: rgb(255, 204, 0); }
 
-    .modern-card:hover {
-        background: #003366;
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 51, 102, 0.15);
-    }
+.social-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    .modern-card:hover h5 { color: rgb(255, 204, 0); }
-    .modern-card:hover p { color: rgba(255, 255, 255, 0.7) !important; }
+.social-btn:hover {
+    background: rgb(255, 204, 0);
+    color: #003366;
+    transform: translateY(-3px);
+}
 
-    .card-icon {
-        width: 60px;
-        height: 60px;
-        background: rgba(0, 51, 102, 0.1);
-        color: #003366;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        flex-shrink: 0;
-        transition: 0.3s;
-    }
+/* ফর্ম ডিজাইন */
+.custom-input {
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-    .modern-card:hover .card-icon {
-        background: rgba(255, 255, 255, 0.1);
-        color: rgb(255, 204, 0);
-    }
+.custom-input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.1);
+}
 
-    /* ভাসা ভাসা অ্যানিমেশন */
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-15px); }
-    }
+.btn-send {
+    background: rgb(255, 204, 0);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 100%;
+}
 
-    @media (max-width: 991px) {
-        .experience-badge { display: none; }
-    }
+.btn-send:hover {
+    background: #003366;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.15);
+}
+
+@media (max-width: 991px) {
+    .contact-info-card { margin-bottom: 20px; }
+}
+
+
+
+/*keno amader serthotto start*/
+.rounded-custom {
+    border-radius: 50px 5px 50px 5px; /* ইউনিক বর্ডার রেডিয়াস */
+    border: 10px solid #fff;
+}
+
+.feature-img-wrapper {
+    padding: 20px;
+}
+
+/* অভিজ্ঞতার ব্যাজ */
+.experience-badge {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+    background: rgb(255, 204, 0);
+    color: #003366;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* মডার্ন কার্ড ডিজাইন */
+.modern-card {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(0, 51, 102, 0.05);
+}
+
+.modern-card:hover {
+    background: #003366;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 51, 102, 0.15);
+}
+
+.modern-card:hover h5 { color: rgb(255, 204, 0); }
+.modern-card:hover p { color: rgba(255, 255, 255, 0.7) !important; }
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 51, 102, 0.1);
+    color: #003366;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.modern-card:hover .card-icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 204, 0);
+}
+
+/* ভাসা ভাসা অ্যানিমেশন */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@media (max-width: 991px) {
+    .experience-badge { display: none; }
+}
 
 
 
@@ -1119,193 +1124,305 @@ body.modal-open {
 
 /*slim-stats section start*/
 
-    .pulse-gold {
-        animation: pulse-animation 2s infinite;
-        border-radius: 50%;
-    }
+.pulse-gold {
+    animation: pulse-animation 2s infinite;
+    border-radius: 50%;
+}
 
-    @keyframes pulse-animation {
-        0% { box-shadow: 0 0 0 0px rgba(255, 204, 0, 0.4); }
-        100% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
-    }
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0px rgba(255, 204, 0, 0.4); }
+    100% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
+}
 
-    /* ২. নিচ থেকে ভেসে ওঠার এনিমেশন (Reveal) */
-    .reveal-up {
-        animation: slide-up 0.8s ease-out forwards;
-        opacity: 0;
-        transform: translateY(30px);
-    }
+/* ২. নিচ থেকে ভেসে ওঠার এনিমেশন (Reveal) */
+.reveal-up {
+    animation: slide-up 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
 
-    @keyframes slide-up {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    /* আইকন কালার */
-    .stat-icon-slim {
-        font-size: 24px;
-        color: rgb(255, 204, 0);
-    }
+/* আইকন কালার */
+.stat-icon-slim {
+    font-size: 24px;
+    color: rgb(255, 204, 0);
+}
 
 /*mission and vission start*/
 
+.mission-vision h2 {
+    font-size: 2.5rem;
+}
+
+.title-divider {
+    transition: width 0.3s ease;
+}
+
+/* মোবাইলে হেডলাইন সাইজ কিছুটা ছোট হবে */
+@media (max-width: 768px) {
     .mission-vision h2 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
-    
-    .title-divider {
-        transition: width 0.3s ease;
-    }
-
-    /* মোবাইলে হেডলাইন সাইজ কিছুটা ছোট হবে */
-    @media (max-width: 768px) {
-        .mission-vision h2 {
-            font-size: 1.8rem;
-        }
-    }
+}
 
 
 
-    /*home work starte */
+/*home work starte */
 
-    .title-line { width: 60px; height: 4px; background: rgb(255, 204, 0); border-radius: 10px; margin-top: 15px; }
-    
-    /* ফিল্টার ডিজাইন */
-    .filter-wrapper {
-        background: #ffffff;
-        border-radius: 15px;
-        border: 1px solid rgba(0, 51, 102, 0.05);
-    }
-    
-    .btn-search-gold {
-        background: #003366;
-        color: rgb(255, 204, 0);
-        border: none;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-    .btn-search-gold:hover {
-        background: rgb(255, 204, 0);
-        color: #003366;
-        transform: translateY(-2px);
-    }
+.title-line { width: 60px; height: 4px; background: rgb(255, 204, 0); border-radius: 10px; margin-top: 15px; }
 
-    /* কার্ড ডিজাইন */
-    .homework-card {
-        background: #ffffff;
-        border-radius: 20px;
-        overflow: hidden;
-        border: 1px solid rgba(0, 51, 102, 0.05);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        height: 100%;
-    }
-    
-    .homework-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0,51,102,0.1);
-    }
+/* ফিল্টার ডিজাইন */
+.filter-wrapper {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 51, 102, 0.05);
+}
 
-    .card-top-accent { width: 100%; height: 5px; background: #003366; }
-    .card-top-accent-gold { width: 100%; height: 5px; background: rgb(255, 204, 0); }
+.btn-search-gold {
+    background: #003366;
+    color: rgb(255, 204, 0);
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-search-gold:hover {
+    background: rgb(255, 204, 0);
+    color: #003366;
+    transform: translateY(-2px);
+}
 
-    /* আইকন বক্স */
-    .subject-icon-box { width: 50px; height: 50px; background: rgba(0, 51, 102, 0.1); color: #003366; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
-    .subject-icon-box-gold { width: 50px; height: 50px; background: rgba(255, 204, 0, 0.2); color: #b8860b; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+/* কার্ড ডিজাইন */
+.homework-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 51, 102, 0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+}
 
-    /* ট্যাগ ও ইন্ডিকেটর */
-    .date-tag { font-size: 11px; font-weight: 700; color: #888; text-uppercase: uppercase; letter-spacing: 0.5px; }
-    .status-indicator { font-size: 12px; color: #28a745; font-weight: 600; margin-top: 10px; }
-    .status-indicator-gold { font-size: 12px; color: #003366; font-weight: 600; margin-top: 10px; }
+.homework-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,51,102,0.1);
+}
 
-    .leading-relaxed { line-height: 1.7; font-size: 14.5px; }
+.card-top-accent { width: 100%; height: 5px; background: #003366; }
+.card-top-accent-gold { width: 100%; height: 5px; background: rgb(255, 204, 0); }
 
-    /* শ্যাডো ইফেক্ট */
-    .active-card { border: 1px solid rgba(255, 204, 0, 0.3); }
+/* আইকন বক্স */
+.subject-icon-box { width: 50px; height: 50px; background: rgba(0, 51, 102, 0.1); color: #003366; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+.subject-icon-box-gold { width: 50px; height: 50px; background: rgba(255, 204, 0, 0.2); color: #b8860b; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
 
-    @media (max-width: 768px) {
-        .filter-wrapper { padding: 10px; }
-    }
+/* ট্যাগ ও ইন্ডিকেটর */
+.date-tag { font-size: 11px; font-weight: 700; color: #888; text-uppercase: uppercase; letter-spacing: 0.5px; }
+.status-indicator { font-size: 12px; color: #28a745; font-weight: 600; margin-top: 10px; }
+.status-indicator-gold { font-size: 12px; color: #003366; font-weight: 600; margin-top: 10px; }
+
+.leading-relaxed { line-height: 1.7; font-size: 14.5px; }
+
+/* শ্যাডো ইফেক্ট */
+.active-card { border: 1px solid rgba(255, 204, 0, 0.3); }
+
+@media (max-width: 768px) {
+    .filter-wrapper { padding: 10px; }
+}
 
 
-  /*group css start*/
- /* জেনারেল স্টাইল */
-    .rounded-4 { border-radius: 1.25rem !important; }
-    .bg-light { background-color: #f8fbff !important; }
-    
-    /* ট্যাব বাটন স্টাইল */
-    .custom-tabs .nav-link {
-        color: #555;
-        font-weight: 600;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid transparent;
-    }
-    .custom-tabs .nav-link:hover {
-        color: #003366;
-        background: rgba(0, 51, 102, 0.05);
-    }
+/*group css start*/
+/* জেনারেল স্টাইল */
+.rounded-4 { border-radius: 1.25rem !important; }
+.bg-light { background-color: #f8fbff !important; }
 
-    .custom-tabs .nav-link.active {
-        border: 2px solid #ffcc00;
-        background-color: #003366 !important;
-        color: #ffcc00 !important;
-        box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
-    }
+/* ট্যাব বাটন স্টাইল */
+.custom-tabs .nav-link {
+    color: #555;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+.custom-tabs .nav-link:hover {
+    color: #003366;
+    background: rgba(0, 51, 102, 0.05);
+}
 
-    /* টেবিল স্টাইল */
-    .table thead th {
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    .table tbody tr {
-        transition: background 0.3s;
-    }
+.custom-tabs .nav-link.active {
+    border: 2px solid #ffcc00;
+    background-color: #003366 !important;
+    color: #ffcc00 !important;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
 
-    /* শিক্ষক ও হোমওয়ার্ক কার্ড অ্যানিমেশন */
-    .hover-lift {
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .hover-lift:hover {
+/* টেবিল স্টাইল */
+.table thead th {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.table tbody tr {
+    transition: background 0.3s;
+}
+
+/* শিক্ষক ও হোমওয়ার্ক কার্ড অ্যানিমেশন */
+.hover-lift {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.teacher-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* আইকন বক্স */
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+.rounded-4 { border-radius: 1.25rem !important; }
+.custom-tabs .nav-link {
+    color: #003366;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.custom-tabs .nav-link.active {
+    background-color: #003366 !important;
+    color: #ffcc00 !important;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.1);
+}
+.table-bordered td, .table-bordered th {
+    border-color: #eee !important;
+}
+.tab-pane {
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/*online apply cs start*/
+
+.round-20 { border-radius: 20px; }
+.round-50 { border-radius: 50px !important; }
+
+/* ইনপুট ফিল্ড ডিজাইন */
+.custom-input {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+    border-radius: 8px !important;
+    background-color: #fcfcfc;
+    transition: all 0.3s;
+}
+
+/* এরর স্টেট - যখন ভুল হবে */
+.custom-input.is-invalid {
+    border-color: #dc3545 !important;
+    background-color: #fff8f8 !important;
+}
+
+.error-msg {
+    font-size: 11px;
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* বাটন কালার */
+.btn-gold { background: #ffcc00; color: #002a52; font-weight: bold; border: none; transition: 0.3s; }
+.btn-gold:hover { background: #e6b800; transform: translateY(-2px); }
+.btn-navy { background: #002a52; color: #fff; font-weight: bold; border: 2px solid #ffcc00; }
+
+/* বাম পাশের স্টেপ আইকন */
+.v-step { display: flex; align-items: center; margin-bottom: 35px; opacity: 0.4; transition: 0.4s; }
+.v-step.active { opacity: 1; }
+.v-number { width: 38px; height: 38px; border: 2px solid #ffcc00; border-radius: 50%; text-align: center; line-height: 34px; font-weight: bold; color: #ffcc00; margin-right: 15px; }
+.v-step.active .v-number { background: #ffcc00; color: #002a52; box-shadow: 0 0 10px rgba(255,204,0,0.4); }
+.v-text { font-weight: bold; font-size: 14px; }
+.v-text span { display: block; font-size: 11px; font-weight: normal; color: #aaa; }
+
+
+/*ata amr notice css start*/
+.round-15 { border-radius: 15px !important; }
+.round-50 { border-radius: 50px !important; }
+.round-10 { border-radius: 10px !important; }
+.text-navy { color: #002a52 !important; }
+
+.filter-container::-webkit-scrollbar {
+    display: none; 
+}
+.filter-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.btn-filter {
+    border: none !important;
+    background: transparent;
+    color: #002a52;
+    font-weight: bold;
+    white-space: nowrap; 
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-filter.active {
+    background: #002a52 !important;
+    color: #ffcc00 !important;
+}
+
+.notice-card {
+    transition: 0.3s;
+}
+
+@media (min-width: 992px) {
+    .notice-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 15px 30px rgba(0, 42, 82, 0.12) !important;
     }
+}
 
-    .teacher-card img {
-        height: 250px;
-        object-fit: cover;
-    }
-    
-    /* আইকন বক্স */
-    .icon-shape {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-    }
+.btn-gold {
+    background: #ffcc00 !important;
+    color: #002a52 !important;
+    border: none !important;
+    font-weight: 600;
+}
 
+.btn-outline-navy {
+    border: 1px solid #002a52 !important;
+    color: #002a52 !important;
+    font-weight: 600;
+}
 
-      .rounded-4 { border-radius: 1.25rem !important; }
-    .custom-tabs .nav-link {
-        color: #003366;
-        font-weight: 600;
-        transition: all 0.3s ease;
-    }
-    .custom-tabs .nav-link.active {
-        background-color: #003366 !important;
-        color: #ffcc00 !important;
-        box-shadow: 0 8px 20px rgba(0, 51, 102, 0.1);
-    }
-    .table-bordered td, .table-bordered th {
-        border-color: #eee !important;
-    }
-    .tab-pane {
-        animation: fadeIn 0.5s ease;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
+.btn-navy-active {
+    background: #002a52 !important;
+    color: #ffcc00 !important;
+}
+
+.page-link {
+    font-weight: bold;
+    color: #002a52;
+}
+@media (max-width: 576px) {
+    .display-5 { font-size: 2.5rem; }
+    .h5 { font-size: 1.1rem; }
+    .action-btns { width: 100%; }
+    .btn-filter { padding-left: 15px !important; padding-right: 15px !important; }
+}

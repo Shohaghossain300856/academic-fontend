@@ -14,7 +14,6 @@
 </head>
 <body>
 
-
     <header class="top-header">
         <div class="container-fluid px-lg-5">
             <div class="row align-items-center g-2">
@@ -138,89 +137,141 @@
     </div>
 </section>
 
-
-<section class="contact-section py-5">
-    <div class="container-fluid px-lg-5">
-        <div class="row g-5">
-            <div class="col-lg-5" data-aos="fade-right">
-                <div class="contact-info-card p-5 h-100 rounded-20 shadow-lg text-white" style="background: #003366;">
-                    <h2 class="fw-bold mb-4" style="color: rgb(255, 204, 0);">যোগাযোগ করুন</h2>
-                    <p class="mb-5 opacity-75">যেকোনো প্রশ্ন বা তথ্যের জন্য আমাদের সাথে সরাসরি যোগাযোগ করুন অথবা ফর্মটি পূরণ করে পাঠান।</p>
-
-                    <div class="d-flex align-items-center mb-4 contact-item">
-                        <div class="icon-box me-3"><i class="bi bi-geo-alt-fill"></i></div>
-                        <div>
-                            <h6 class="mb-0 fw-bold gold-text">স্কুলের ঠিকানা</h6>
-                            <p class="mb-0 small">প্রধান সড়ক, আপনার স্কুল এলাকা, ঢাকা-১২০০</p>
+<section class="admission-section py-5" style="background: #f8f9fa;">
+    <div class="container-fluid px-lg-5"> <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="card border-0 shadow-lg round-20 overflow-hidden">
+                <div class="row g-0">
+                    
+                    <div class="col-lg-4 p-5 text-white" style="background: #002a52;">
+                        <h3 class="fw-bold text-warning mb-4">ভর্তি আবেদন ২০২৬</h3>
+                        <div class="vertical-steps">
+                            <div class="v-step active" id="v-indicator-0">
+                                <div class="v-number">১</div>
+                                <div class="v-text">ACADEMIC<span>শিক্ষাগত তথ্য</span></div>
+                            </div>
+                            <div class="v-step" id="v-indicator-1">
+                                <div class="v-number">২</div>
+                                <div class="v-text">PERSONAL<span>ব্যক্তিগত তথ্য</span></div>
+                            </div>
+                            <div class="v-step" id="v-indicator-2">
+                                <div class="v-number">৩</div>
+                                <div class="v-text">GUARDIAN<span>অভিভাবকের তথ্য</span></div>
+                            </div>
+                            <div class="v-step" id="v-indicator-3">
+                                <div class="v-number">৪</div>
+                                <div class="v-text">ACCOUNT<span>নিরাপত্তা সেটিংস</span></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center mb-4 contact-item">
-                        <div class="icon-box me-3"><i class="bi bi-telephone-fill"></i></div>
-                        <div>
-                            <h6 class="mb-0 fw-bold gold-text">ফোন করুন</h6>
-                            <p class="mb-0 small">+৮৮০ ১৭১২-৩৪৫৬৭৮</p>
-                        </div>
-                    </div>
+                    <div class="col-lg-8 p-4 p-md-5 bg-white">
+                        <form id="admissionForm" novalidate>
+                            
+                            <div class="step-content animate__animated animate__fadeIn" id="step-0">
+                                <h4 class="fw-bold mb-4 border-bottom pb-2" style="color: #002a52;">১. অ্যাকাডেমিক তথ্য</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">ভর্তির শ্রেণী *</label>
+                                        <select class="form-select custom-input" required>
+                                            <option value="">শ্রেণী নির্বাচন করুন</option>
+                                            <option>প্লে</option><option>নার্সারি</option><option>প্রথম</option><option>ষষ্ঠ</option><option>নবম</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">ভার্সন *</label>
+                                        <select class="form-select custom-input" required>
+                                            <option value="">ভার্সন নির্বাচন করুন</option>
+                                            <option>বাংলা ভার্সন</option><option>English Version</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label fw-bold">পূর্ববর্তী শিক্ষা প্রতিষ্ঠানের নাম *</label>
+                                        <input type="text" class="form-control custom-input" required placeholder="প্রতিষ্ঠানের নাম লিখুন">
+                                    </div>
+                                </div>
+                                <div class="mt-5 text-end">
+                                    <button type="button" class="btn btn-gold px-5 py-2 round-50 next-btn">পরবর্তী ধাপ <i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>
 
-                    <div class="d-flex align-items-center mb-5 contact-item">
-                        <div class="icon-box me-3"><i class="bi bi-envelope-fill"></i></div>
-                        <div>
-                            <h6 class="mb-0 fw-bold gold-text">ইমেইল করুন</h6>
-                            <p class="mb-0 small">info@yourschool.com</p>
-                        </div>
-                    </div>
+                            <div class="step-content d-none animate__animated animate__fadeIn" id="step-1">
+                                <h4 class="fw-bold mb-4 border-bottom pb-2" style="color: #002a52;">২. শিক্ষার্থীর তথ্য</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">শিক্ষার্থীর নাম (বাংলা) *</label>
+                                        <input type="text" class="form-control custom-input" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">শিক্ষার্থীর নাম (English) *</label>
+                                        <input type="text" class="form-control custom-input" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">জন্ম তারিখ *</label>
+                                        <input type="date" class="form-control custom-input" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">লিঙ্গ *</label>
+                                        <select class="form-select custom-input" required>
+                                            <option value="">নির্বাচন করুন</option>
+                                            <option>ছেলে</option><option>মেয়ে</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-5 d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-secondary px-4 round-50 prev-btn">পিছনে</button>
+                                    <button type="button" class="btn btn-gold px-5 round-50 next-btn">পরবর্তী ধাপ</button>
+                                </div>
+                            </div>
 
-                    <div class="social-links mt-auto">
-                        <h6 class="mb-3 gold-text">আমাদের অনুসরণ করুন</h6>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
-                            <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
-                        </div>
+                            <div class="step-content d-none animate__animated animate__fadeIn" id="step-2">
+                                <h4 class="fw-bold mb-4 border-bottom pb-2" style="color: #002a52;">৩. অভিভাবকের তথ্য</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">পিতার নাম *</label>
+                                        <input type="text" class="form-control custom-input" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">মাতার নাম *</label>
+                                        <input type="text" class="form-control custom-input" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label fw-bold">মোবাইল নম্বর *</label>
+                                        <input type="tel" class="form-control custom-input" required placeholder="017XXXXXXXX">
+                                    </div>
+                                </div>
+                                <div class="mt-5 d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-secondary px-4 round-50 prev-btn">পিছনে</button>
+                                    <button type="button" class="btn btn-gold px-5 round-50 next-btn">পরবর্তী ধাপ</button>
+                                </div>
+                            </div>
+
+                            <div class="step-content d-none animate__animated animate__fadeIn" id="step-3">
+                                <h4 class="fw-bold mb-4 border-bottom pb-2" style="color: #002a52;">৪. পাসওয়ার্ড সেট করুন</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">পাসওয়ার্ড *</label>
+                                        <input type="password" class="form-control custom-input" required placeholder="কমপক্ষে ৬ ডিজিট">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">পাসওয়ার্ড নিশ্চিত করুন *</label>
+                                        <input type="password" class="form-control custom-input" required>
+                                    </div>
+                                </div>
+                                <div class="mt-5 d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-secondary px-4 round-50 prev-btn">পিছনে</button>
+                                    <button type="submit" class="btn btn-navy px-5 round-50">আবেদন সম্পন্ন করুন</button>
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-7" data-aos="fade-left">
-                <div class="contact-form-card p-5 bg-white rounded-20 shadow-sm border">
-                    <h3 class="fw-bold mb-4" style="color: #003366;">আমাদের মেসেজ দিন</h3>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">আপনার নাম</label>
-                                <input type="text" class="form-control custom-input" placeholder="নাম লিখুন">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">মোবাইল নম্বর</label>
-                                <input type="text" class="form-control custom-input" placeholder="নম্বর লিখুন">
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label class="form-label fw-bold">বিষয়</label>
-                                <input type="text" class="form-control custom-input" placeholder="কি বিষয়ে লিখতে চান?">
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label class="form-label fw-bold">আপনার মেসেজ</label>
-                                <textarea class="form-control custom-input" rows="4" placeholder="বিস্তারিত লিখুন..."></textarea>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-send py-3 px-5 fw-bold">মেসেজ পাঠান <i class="bi bi-send-fill ms-2"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-5" data-aos="fade-up">
-            <div class="col-12 rounded-20 overflow-hidden shadow-sm" style="height: 350px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902341315808!2d90.3910801153628!3d23.75086719467644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bd531c245b%3A0x1031ff61a9957d07!2sPanthapath%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1634567890123!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
+</div>
 </section>
-
-
 
 <footer class="main-footer">
     <div class="container-fluid px-lg-5">
@@ -230,7 +281,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/2913/2913045.png" alt="Logo" class="footer-logo mb-3">
                     <h4 class="school-name-footer">আদর্শ উচ্চ বিদ্যালয়</h4>
                     <p class="about-text">শিক্ষা নিয়ে গড়ব দেশ, গণতন্ত্রের বাংলাদেশ। আমরা শিক্ষার্থীদের মানসম্মত শিক্ষা ও নৈতিক চরিত্র গঠনে প্রতিশ্রুতিবদ্ধ।</p>
-                    <div class="d-flex social-links">
+                    <div class="social-links">
                         <a href="#"><i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-youtube"></i></a>
                         <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -317,6 +368,92 @@
     mirror: true,   
 });
 </script>
+
+
+
+<script>
+    const steps = document.querySelectorAll(".step-content");
+    const indicators = document.querySelectorAll(".v-step");
+    const nextBtns = document.querySelectorAll(".next-btn");
+    const prevBtns = document.querySelectorAll(".prev-btn");
+    let currentStep = 0;
+
+    function validateStep(index) {
+        let valid = true;
+        const currentEl = steps[index];
+        const inputs = currentEl.querySelectorAll("input[required], select[required]");
+        currentEl.querySelectorAll('.error-msg').forEach(e => e.remove());
+        currentEl.querySelectorAll('.custom-input').forEach(e => e.classList.remove('is-invalid'));
+        const passField = currentEl.querySelector('input[type="password"]:nth-of-type(1)');
+        const confirmPassField = currentEl.querySelector('input[type="password"]:nth-of-type(2)');
+
+        inputs.forEach(input => {
+            let msg = "";
+            
+            if (!input.value.trim()) {
+                msg = "এই তথ্যটি পূরণ করা বাধ্যতামূলক";
+                valid = false;
+            } 
+            else if (input.type === "tel" && !/^\d{11}$/.test(input.value)) {
+                msg = "সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন";
+                valid = false;
+            } 
+            else if (input.type === "password" && input.value.length < 6) {
+                msg = "পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে";
+                valid = false;
+            }
+
+            if (msg) {
+                showError(input, msg);
+            }
+        });
+
+        if (index === 3 && passField && confirmPassField) {
+            if (passField.value !== confirmPassField.value && confirmPassField.value !== "") {
+                showError(confirmPassField, "পাসওয়ার্ড দুটি মেলেনি! আবার চেক করুন");
+                valid = false;
+            }
+        }
+
+        return valid;
+    }
+
+    function showError(input, msg) {
+        input.classList.add('is-invalid');
+        const error = document.createElement('div');
+        error.className = 'error-msg animate__animated animate__headShake';
+        error.style.color = "#dc3545";
+        error.style.fontSize = "11px";
+        error.style.marginTop = "4px";
+        error.innerText = msg;
+        input.parentNode.appendChild(error);
+    }
+
+    nextBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            if (validateStep(currentStep)) {
+                steps[currentStep].classList.add("d-none");
+                indicators[currentStep].classList.remove("active");
+                currentStep++;
+                steps[currentStep].classList.remove("d-none");
+                indicators[currentStep].classList.add("active");
+                window.scrollTo(0, 200);
+            }
+        });
+    });
+
+    // পিছনে যাওয়ার বাটনের কাজ
+    prevBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            steps[currentStep].classList.add("d-none");
+            indicators[currentStep].classList.remove("active");
+            currentStep--;
+            steps[currentStep].classList.remove("d-none");
+            indicators[currentStep].classList.add("active");
+        });
+    });
+</script>
+
 
 </body>
 </html>
